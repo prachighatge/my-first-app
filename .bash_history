@@ -122,3 +122,20 @@ npm install
 git add .
 git commit -m "Fix: reinstall node modules"
 git push
+npm install react-scripts --save
+git add .
+git commit -m "Add react-scripts properly"
+git push
+touch .gitignore
+git add .gitignore
+git commit -m "Add .gitignore file"
+git push
+git add package.json
+git commit -m "Add build script to package.json"
+git push
+git add package.json
+git commit -m "Add build script"
+git push
+npm error Missing script: "build"
+rm -rf node_modules
+npm install
