@@ -86,3 +86,39 @@ dir
 find ~ -name package.json 2>/dev/null
 /home/prachighatge/my-first-app
 nano .env
+cd info-finder
+git init
+git add .
+git commit -m "Initial commit"
+git config --global user.name "PrachiGhatge"
+
+git config --global "Prachi Ghatge"
+git config --global "your-email@example.com"
+git config --global "PrachiGhatge"
+git config --global "prachi.ghatge@camascope.com"
+git config --global "PrachiGhatge"
+git config --global "prachi.ghatge@camascope.com"
+git config --global user.name "Prachi Ghatge"
+git config --global user.email "prachi.ghatge@camascope.com" 
+git commit -m "Initial commit"
+git remote add origin https://github.com/prachighatge/my-Info-Finder.git
+git branch -M main
+git push -u origin main
+cd path/to/info-finder
+cd "my first app"
+cd "my- first- app"
+git remote add origin https://github.com/prachighatge/my-first-app.git
+git branch -M main
+git push -u origin main
+git remote remove origin
+git remote add origin https://github.com/https://github.com/prachighatge/my-Info-Finder>.git
+git remote add origin https://github.com/prachighatge/my-first-app.git
+git branch -M main
+git push -u origin main
+cd my-first-app
+npm start
+rm -rf node_modules package-lock.json
+npm install
+git add .
+git commit -m "Fix: reinstall node modules"
+git push
