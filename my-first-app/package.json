@@ -2,6 +2,7 @@
   "name": "my-first-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://prachighatge.github.io/my-first-app",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
@@ -26,7 +27,7 @@
   },
   "engines": {
     "node": "18.x"
-  }
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -40,3 +41,4 @@
     ]
   }
 }
+

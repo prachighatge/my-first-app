@@ -9,12 +9,13 @@ body {
 }
 
 .app-container {
-  max-width: 700px;
-  margin: 40px auto;
-  background: white;
-  padding: 30px 40px;
-  border-radius: 10px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  background-image: url('/background.jpg'); /* Use the image from public */
+  background-size: cover; /* Makes the image cover the whole container */
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Full screen height */
+  padding: 20px;
+  color: white; /* Optional: makes text more readable */
 }
 
 h1 {
