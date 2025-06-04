@@ -1,6 +1,7 @@
 // src/App.js
 import React, { useState } from 'react';
 import './styles.css';
+import './App.css';
 
 // Hardcoded API keys (replace with your actual keys)
 const weatherKey = 'cfe35ea7b36d6c8acc79e95017a587de';

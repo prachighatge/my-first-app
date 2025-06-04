@@ -2,28 +2,28 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f5f7fa;
-  margin: 0;
-  padding: 0;
-  color: #333;
+  background-image: url('/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .app-container {
-  background-image: url('/background.jpg'); /* Use the image from public */
-  background-size: cover; /* Makes the image cover the whole container */
+  background-image: url('/my-first-app/background.jpg'); /* ← Only works after deploy if app is served from /my-first-app */
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh; /* Full screen height */
+  min-height: 100vh;
   padding: 20px;
-  color: white; /* Optional: makes text more readable */
+  color: white;
 }
+
 
 h1 {
   text-align: center;
   margin-bottom: 30px;
   color: #007acc;
 }
-
 .search-controls {
   display: flex;
   gap: 10px;
