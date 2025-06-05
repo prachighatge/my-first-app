@@ -1,18 +1,19 @@
 // src/App.js
 import React, { useState } from 'react';
 import './styles.css';
+
 const weatherKey = 'cfe35ea7b36d6c8acc79e95017a587de';
 const newsKey = 'pub_740a79cd2612413495fe3d3533dc3d53';
 const movieKey = 'd07f3b6b';
 
 function App() {
-  const [section, setSection] = useState('github');
+  const [section, setSection] = useState('');
   const [query, setQuery] = useState('');
   const [results, setResults] = useState([]);
   const [loading, setLoading] = useState(false);
 
   const handleSearch = () => {
-    if (!query.trim()) return;
+    if (!query.trim() || !section) return;
 
     setLoading(true);
     setResults([]);
@@ -74,33 +75,73 @@ function App() {
       });
   };
 
+  // When a card is clicked: set section and clear query/results
+  const handleCardClick = (selectedSection) => {
+    setSection(selectedSection);
+    setQuery('');
+    setResults([]);
+  };
+
   return (
     <div className="app-container">
       <h1>Info Finder App</h1>
 
-      <div className="search-controls">
-        <select value={section} onChange={e => setSection(e.target.value)}>
-          <option value="github">GitHub Users</option>
-          <option value="books">Books</option>
-          <option value="weather">Weather</option>
-          <option value="news">News</option>
-          <option value="movies">Movies</option>
-        </select>
+      {/* Show homepage cards only if no section selected or no results */}
+      {(!section || results.length === 0) && (
+        <div className="grid-container">
+          <div className="card" onClick={() => handleCardClick('weather')}>
+            <span className="emoji">🌦️</span>
+            <p>Weather</p>
+          </div>
+          <div className="card" onClick={() => handleCardClick('news')}>
+            <span className="emoji">📰</span>
+            <p>News</p>
+          </div>
+          <div className="card" onClick={() => handleCardClick('github')}>
+            <span className="emoji">🐙</span>
+            <p>GitHub</p>
+          </div>
+          <div className="card" onClick={() => handleCardClick('movies')}>
+            <span className="emoji">🎬</span>
+            <p>Movies</p>
+          </div>
+          <div className="card" onClick={() => handleCardClick('books')}>
+            <span className="emoji">📚</span>
+            <p>Books</p>
+          </div>
+          <div className="card" onClick={() => handleCardClick('jokes')}>
+            <span className="emoji">🤣</span>
+            <p>Jokes</p>
+          </div>
+        </div>
+      )}
 
-        <input
-          type="text"
-          placeholder="Enter search..."
-          value={query}
-          onChange={e => setQuery(e.target.value)}
-        />
+      {/* Search controls shown only if a section is selected */}
+      {section && (
+        <div className="search-controls">
+          <select value={section} onChange={e => setSection(e.target.value)}>
+            <option value="github">GitHub Users</option>
+            <option value="books">Books</option>
+            <option value="weather">Weather</option>
+            <option value="news">News</option>
+            <option value="movies">Movies</option>
+          </select>
 
-        <button onClick={handleSearch}>Search</button>
-      </div>
+          <input
+            type="text"
+            placeholder={`Search ${section}...`}
+            value={query}
+            onChange={e => setQuery(e.target.value)}
+          />
+
+          <button onClick={handleSearch}>Search</button>
+        </div>
+      )}
 
       {loading ? (
         <div className="spinner"></div>
       ) : (
-        <DisplayResults section={section} results={results} />
+        section && <DisplayResults section={section} results={results} />
       )}
     </div>
   );
@@ -166,6 +207,10 @@ function DisplayResults({ section, results }) {
           ))}
         </ul>
       );
+
+    case 'jokes':
+      // You don't currently have jokes API in your fetch, so you might want to implement that later.
+      return <p>Jokes feature coming soon! 🤪</p>;
 
     default:
       return null;
