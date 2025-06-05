@@ -256,3 +256,27 @@ git remote -v
 git push origin main
 npm run deploy
 npm run build
+git add .
+git commit -m "UI enhancement + gh-pages setup"
+git push origin main
+git rev-list --objects --all |   git cat-file --batch-check='%(objecttype) %(objectname) %(objectsize) %(rest)' |   sed -n 's/^blob //p' |   sort -n -k2 |   tail -20
+git rm -r --cached .vscode-server
+git commit -m "Remove .vscode-server directory from repo"
+git add .
+git commit -m "UI enhancement + gh-pages setup"
+git push origin main
+npm run deploy
+npm install
+npm run deploy
+cd my-first-app
+npm install
+npm run
+npm run deploy
+git add .
+git commit -m "Updated font colors to maroon and black"
+git push origin main
+npm run deploy
+git add .
+git commit -m "Add homepage layout and functionality"
+git push origin main
+npm run deploy

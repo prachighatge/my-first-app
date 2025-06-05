@@ -11,24 +11,28 @@
 10 timing config:load:project Completed in 3ms
 11 timing config:load:file:/home/prachighatge/.npmrc Completed in 0ms
 12 timing config:load:user Completed in 0ms
-13 timing config:load:file:/etc/npmrc Completed in 0ms
-14 timing config:load:global Completed in 0ms
-15 timing config:load:setEnvs Completed in 1ms
+13 timing config:load:file:/etc/npmrc Completed in 1ms
+14 timing config:load:global Completed in 1ms
+15 timing config:load:setEnvs Completed in 0ms
 16 timing config:load Completed in 10ms
 17 timing npm:load:configload Completed in 10ms
-18 timing npm:load:mkdirpcache Completed in 0ms
-19 timing npm:load:mkdirplogs Completed in 1ms
-20 verbose title npm start
-21 verbose argv "start"
+18 timing npm:load:mkdirpcache Completed in 1ms
+19 timing npm:load:mkdirplogs Completed in 0ms
+20 verbose title npm run deploy
+21 verbose argv "run" "deploy"
 22 timing npm:load:setTitle Completed in 1ms
-23 timing config:load:flatten Completed in 3ms
-24 timing npm:load:display Completed in 4ms
-25 verbose logfile logs-max:10 dir:/home/prachighatge/.npm/_logs/2025-06-04T12_33_30_818Z-
-26 verbose logfile /home/prachighatge/.npm/_logs/2025-06-04T12_33_30_818Z-debug-0.log
+23 timing config:load:flatten Completed in 2ms
+24 timing npm:load:display Completed in 2ms
+25 verbose logfile logs-max:10 dir:/home/prachighatge/.npm/_logs/2025-06-05T08_08_16_355Z-
+26 verbose logfile /home/prachighatge/.npm/_logs/2025-06-05T08_08_16_355Z-debug-0.log
 27 timing npm:load:logFile Completed in 6ms
 28 timing npm:load:timers Completed in 0ms
 29 timing npm:load:configScope Completed in 0ms
-30 timing npm:load Completed in 24ms
+30 timing npm:load Completed in 21ms
 31 silly logfile start cleaning logs, removing 1 files
-32 timing config:load:flatten Completed in 1ms
+32 timing config:load:flatten Completed in 0ms
 33 silly logfile done cleaning log files
+34 timing command:run Completed in 10272ms
+35 verbose exit 0
+36 timing npm Completed in 10305ms
+37 info ok

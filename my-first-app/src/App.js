@@ -13,7 +13,7 @@ function App() {
   const [loading, setLoading] = useState(false);
 
   const handleSearch = () => {
-    if (!query.trim() || !section) return;
+    if (!section) return;
 
     setLoading(true);
     setResults([]);
@@ -21,19 +21,27 @@ function App() {
 
     switch (section) {
       case 'github':
+        if (!query.trim()) return;
         apiUrl = `https://api.github.com/search/users?q=${query}`;
         break;
       case 'books':
+        if (!query.trim()) return;
         apiUrl = `https://openlibrary.org/search.json?q=${query}`;
         break;
       case 'weather':
+        if (!query.trim()) return;
         apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=${weatherKey}&units=metric`;
         break;
       case 'news':
+        if (!query.trim()) return;
         apiUrl = `https://newsdata.io/api/1/news?apikey=${newsKey}&q=${query}&language=en`;
         break;
       case 'movies':
+        if (!query.trim()) return;
         apiUrl = `https://www.omdbapi.com/?apikey=${movieKey}&s=${query}`;
+        break;
+      case 'jokes':
+        apiUrl = `https://official-joke-api.appspot.com/jokes/ten`;
         break;
       default:
         return;
@@ -62,6 +70,9 @@ function App() {
           case 'movies':
             setResults(data.Search || []);
             break;
+          case 'jokes':
+            setResults(data || []);
+            break;
           default:
             setResults([]);
         }
@@ -75,7 +86,6 @@ function App() {
       });
   };
 
-  // When a card is clicked: set section and clear query/results
   const handleCardClick = (selectedSection) => {
     setSection(selectedSection);
     setQuery('');
@@ -86,37 +96,29 @@ function App() {
     <div className="app-container">
       <h1>Info Finder App</h1>
 
-      {/* Show homepage cards only if no section selected or no results */}
       {(!section || results.length === 0) && (
         <div className="grid-container">
           <div className="card" onClick={() => handleCardClick('weather')}>
-            <span className="emoji">🌦️</span>
-            <p>Weather</p>
+            <span className="emoji">🌦️</span><p>Weather</p>
           </div>
           <div className="card" onClick={() => handleCardClick('news')}>
-            <span className="emoji">📰</span>
-            <p>News</p>
+            <span className="emoji">📰</span><p>News</p>
           </div>
           <div className="card" onClick={() => handleCardClick('github')}>
-            <span className="emoji">🐙</span>
-            <p>GitHub</p>
+            <span className="emoji">🐙</span><p>GitHub</p>
           </div>
           <div className="card" onClick={() => handleCardClick('movies')}>
-            <span className="emoji">🎬</span>
-            <p>Movies</p>
+            <span className="emoji">🎬</span><p>Movies</p>
           </div>
           <div className="card" onClick={() => handleCardClick('books')}>
-            <span className="emoji">📚</span>
-            <p>Books</p>
+            <span className="emoji">📚</span><p>Books</p>
           </div>
           <div className="card" onClick={() => handleCardClick('jokes')}>
-            <span className="emoji">🤣</span>
-            <p>Jokes</p>
+            <span className="emoji">🤣</span><p>Jokes</p>
           </div>
         </div>
       )}
 
-      {/* Search controls shown only if a section is selected */}
       {section && (
         <div className="search-controls">
           <select value={section} onChange={e => setSection(e.target.value)}>
@@ -125,14 +127,17 @@ function App() {
             <option value="weather">Weather</option>
             <option value="news">News</option>
             <option value="movies">Movies</option>
+            <option value="jokes">Jokes</option>
           </select>
 
-          <input
-            type="text"
-            placeholder={`Search ${section}...`}
-            value={query}
-            onChange={e => setQuery(e.target.value)}
-          />
+          {section !== 'jokes' && (
+            <input
+              type="text"
+              placeholder={`Search ${section}...`}
+              value={query}
+              onChange={e => setQuery(e.target.value)}
+            />
+          )}
 
           <button onClick={handleSearch}>Search</button>
         </div>
@@ -209,8 +214,15 @@ function DisplayResults({ section, results }) {
       );
 
     case 'jokes':
-      // You don't currently have jokes API in your fetch, so you might want to implement that later.
-      return <p>Jokes feature coming soon! 🤪</p>;
+      return (
+        <ul className="result-list">
+          {results.map((joke, index) => (
+            <li key={index} className="result-item">
+              😂 <strong>{joke.setup}</strong> — {joke.punchline}
+            </li>
+          ))}
+        </ul>
+      );
 
     default:
       return null;
@@ -218,3 +230,4 @@ function DisplayResults({ section, results }) {
 }
 
 export default App;
+
