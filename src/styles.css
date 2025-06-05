@@ -1,0 +1,208 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-image: url('./background.jpg'); /* Ensure background.jpg is in public folder */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #000; /* Default text color */
+}
+
+/* Main container */
+.app-container {
+  max-width: 850px;
+  margin: 60px auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #800000; /* Maroon */
+}
+
+/* Search controls */
+.search-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+select,
+input[type="text"],
+button {
+  padding: 12px 15px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  min-width: 160px;
+  color: #000;
+}
+
+select:focus,
+input[type="text"]:focus {
+  outline: none;
+  border-color: #800000;
+  box-shadow: 0 0 5px rgba(128, 0, 0, 0.4);
+}
+
+/* Button styling */
+button {
+  background-color: #800000;
+  color: white;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  min-width: 100px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #5c0000;
+}
+
+/* Result list */
+.result-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.result-item {
+  background: white;
+  color: #333;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.result-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+.result-item img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #800000;
+  flex-shrink: 0;
+}
+
+/* Weather section */
+.weather-result {
+  background: #fff0f0;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #800000;
+  box-shadow: 0 0 10px rgba(128, 0, 0, 0.2);
+}
+
+/* Anchor tags */
+a {
+  color: #800000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Spinner loader */
+.spinner {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #800000;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 0.8s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .search-controls {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  select,
+  input[type="text"],
+  button {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .app-container {
+    padding: 20px;
+  }
+}
+
+/* 🔥 Grid Card Homepage Layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 2rem;
+}
+
+.card {
+  background: linear-gradient(to bottom right, #f3f4f6, #e5e7eb);
+  border-radius: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.emoji {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.quote-box {
+  margin-top: 30px;
+  font-size: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f3f3f3;
+  border-left: 5px solid maroon;
+  padding: 20px;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+}
+
+
