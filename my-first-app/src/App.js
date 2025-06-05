@@ -15,35 +15,36 @@ function App() {
   const handleSearch = () => {
     if (!section) return;
 
+    // For all except jokes, require non-empty query
+    if (section !== 'jokes' && !query.trim()) return;
+
     setLoading(true);
     setResults([]);
     let apiUrl = '';
 
     switch (section) {
       case 'github':
-        if (!query.trim()) return;
         apiUrl = `https://api.github.com/search/users?q=${query}`;
         break;
       case 'books':
-        if (!query.trim()) return;
         apiUrl = `https://openlibrary.org/search.json?q=${query}`;
         break;
       case 'weather':
-        if (!query.trim()) return;
         apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=${weatherKey}&units=metric`;
         break;
       case 'news':
-        if (!query.trim()) return;
         apiUrl = `https://newsdata.io/api/1/news?apikey=${newsKey}&q=${query}&language=en`;
         break;
       case 'movies':
-        if (!query.trim()) return;
         apiUrl = `https://www.omdbapi.com/?apikey=${movieKey}&s=${query}`;
         break;
       case 'jokes':
-        apiUrl = `https://official-joke-api.appspot.com/jokes/ten`;
+        // Updated API URL with optional query
+        apiUrl = `https://v2.jokeapi.dev/joke/Any?type=single${query ? `&contains=${query}` : ''}`;
         break;
+
       default:
+        setLoading(false);
         return;
     }
 
@@ -71,7 +72,14 @@ function App() {
             setResults(data.Search || []);
             break;
           case 'jokes':
-            setResults(data || []);
+            // Handle jokes response correctly
+            if (data.jokes) {
+              setResults(data.jokes);
+            } else if (data.joke) {
+              setResults([data]);
+            } else {
+              setResults([]);
+            }
             break;
           default:
             setResults([]);
@@ -121,7 +129,11 @@ function App() {
 
       {section && (
         <div className="search-controls">
-          <select value={section} onChange={e => setSection(e.target.value)}>
+          <select value={section} onChange={e => {
+            setSection(e.target.value);
+            setQuery('');
+            setResults([]);
+          }}>
             <option value="github">GitHub Users</option>
             <option value="books">Books</option>
             <option value="weather">Weather</option>
@@ -130,12 +142,14 @@ function App() {
             <option value="jokes">Jokes</option>
           </select>
 
+          {/* For jokes, no input field */}
           {section !== 'jokes' && (
             <input
               type="text"
               placeholder={`Search ${section}...`}
               value={query}
               onChange={e => setQuery(e.target.value)}
+              onKeyDown={e => { if (e.key === 'Enter') handleSearch(); }}
             />
           )}
 
@@ -218,7 +232,7 @@ function DisplayResults({ section, results }) {
         <ul className="result-list">
           {results.map((joke, index) => (
             <li key={index} className="result-item">
-              😂 <strong>{joke.setup}</strong> — {joke.punchline}
+              😂 {joke.joke || `${joke.setup} — ${joke.delivery}`}
             </li>
           ))}
         </ul>
@@ -230,4 +244,3 @@ function DisplayResults({ section, results }) {
 }
 
 export default App;
-

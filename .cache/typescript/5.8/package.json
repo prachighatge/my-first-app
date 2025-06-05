@@ -1,1 +1,1 @@
-{"private":true,"dependencies":{"types-registry":"^0.1.723"},"devDependencies":{"@types/react":"^19.1.5","@types/react-dom":"^19.1.5","@types/scheduler":"^0.26.0"}}
+{"private":true,"dependencies":{"types-registry":"^0.1.723"},"devDependencies":{"@types/gh-pages":"^6.1.0","@types/react":"^19.1.5","@types/react-dom":"^19.1.5","@types/scheduler":"^0.26.0"}}

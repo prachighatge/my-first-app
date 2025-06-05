@@ -280,3 +280,17 @@ git add .
 git commit -m "Add homepage layout and functionality"
 git push origin main
 npm run deploy
+git add .
+git commit -m "Added Jokes feature to UI"
+git push origin main
+npm run deploy
+git add .
+git commit -m "Added Jokes feature to UI"
+git push origin main
+npm run deploy
+npm install --save gh-pages
+git add .
+git commit -m "Prepare for GitHub Pages deployment"
+git push origin mainv
+git push origin main
+git status
