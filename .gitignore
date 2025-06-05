@@ -21,3 +21,4 @@ build/
 # Optional: Ignore IDE/editor folders (add if you use any)
 .vscode/
 .idea/
+.vscode-server/
