@@ -20,3 +20,102 @@
 [2025-05-23T04:56:32.402464459Z][docker-desktop-user-distro] no need to symlink <HOME>/.azure to /mnt/c/Users/<HOST>Ghatge/.azure: they are the same path already
 -------------------------------------------------------------------------------->8
 [2025-05-23T04:56:32.716778545Z][docker-desktop-user-distro] linkPathToWindows windowsPath = /mnt/c/Users/<HOST>Ghatge/.docker/features.json, linkPath = ~/.docker/features.json
+-------------------------------------------------------------------------------->8
+[2025-05-28T04:45:01.679873411Z][docker-desktop-user-distro] syncContextStores <HOME>/.docker/contexts <-> /mnt/c/Users/<HOST>Ghatge/.docker/contexts
+[2025-05-28T04:45:01.699111741Z][docker-desktop-user-distro] syncContextStores <HOME>/.docker/contexts <-> /mnt/c/Users/<HOST>Ghatge/.docker/contexts: syncNoop
+-------------------------------------------------------------------------------->8
+[2025-05-28T04:45:02.555544273Z][docker-desktop-user-distro] linkPathToWindows windowsPath = /mnt/c/Users/<HOST>Ghatge/.aws, linkPath = <HOME>/.aws
+[2025-05-28T04:45:02.570977775Z][docker-desktop-user-distro] no need to symlink <HOME>/.aws to /mnt/c/Users/<HOST>Ghatge/.aws: they are the same path already
+-------------------------------------------------------------------------------->8
+[2025-05-28T04:45:02.905314536Z][docker-desktop-user-distro] linkPathToWindows windowsPath = /mnt/c/Users/<HOST>Ghatge/.azure, linkPath = <HOME>/.azure
+[2025-05-28T04:45:02.919476682Z][docker-desktop-user-distro] no need to symlink <HOME>/.azure to /mnt/c/Users/<HOST>Ghatge/.azure: they are the same path already
+-------------------------------------------------------------------------------->8
+[2025-05-28T04:45:03.192321769Z][docker-desktop-user-distro] linkPathToWindows windowsPath = /mnt/c/Users/<HOST>Ghatge/.docker/features.json, linkPath = ~/.docker/features.json
+-------------------------------------------------------------------------------->8
+[2025-05-29T04:38:59.070371411Z][docker-desktop-user-distro] syncContextStores <HOME>/.docker/contexts <-> /mnt/c/Users/<HOST>Ghatge/.docker/contexts
+[2025-05-29T04:38:59.079345021Z][docker-desktop-user-distro] syncContextStores <HOME>/.docker/contexts <-> /mnt/c/Users/<HOST>Ghatge/.docker/contexts: syncNoop
+-------------------------------------------------------------------------------->8
+[2025-05-29T04:38:59.425160723Z][docker-desktop-user-distro] linkPathToWindows windowsPath = /mnt/c/Users/<HOST>Ghatge/.aws, linkPath = <HOME>/.aws
+[2025-05-29T04:38:59.435950558Z][docker-desktop-user-distro] no need to symlink <HOME>/.aws to /mnt/c/Users/<HOST>Ghatge/.aws: they are the same path already
+-------------------------------------------------------------------------------->8
+[2025-05-29T04:38:59.980503225Z][docker-desktop-user-distro] linkPathToWindows windowsPath = /mnt/c/Users/<HOST>Ghatge/.azure, linkPath = <HOME>/.azure
+[2025-05-29T04:38:59.987956893Z][docker-desktop-user-distro] no need to symlink <HOME>/.azure to /mnt/c/Users/<HOST>Ghatge/.azure: they are the same path already
+-------------------------------------------------------------------------------->8
+[2025-05-29T04:39:00.632956034Z][docker-desktop-user-distro] linkPathToWindows windowsPath = /mnt/c/Users/<HOST>Ghatge/.docker/features.json, linkPath = ~/.docker/features.json
+-------------------------------------------------------------------------------->8
+[2025-05-30T04:40:46.109636911Z][docker-desktop-user-distro] syncContextStores <HOME>/.docker/contexts <-> /mnt/c/Users/<HOST>Ghatge/.docker/contexts
+[2025-05-30T04:40:46.168659285Z][docker-desktop-user-distro] syncContextStores <HOME>/.docker/contexts <-> /mnt/c/Users/<HOST>Ghatge/.docker/contexts: syncNoop
+-------------------------------------------------------------------------------->8
+[2025-05-30T04:40:46.632773253Z][docker-desktop-user-distro] linkPathToWindows windowsPath = /mnt/c/Users/<HOST>Ghatge/.aws, linkPath = <HOME>/.aws
+[2025-05-30T04:40:46.650000262Z][docker-desktop-user-distro] no need to symlink <HOME>/.aws to /mnt/c/Users/<HOST>Ghatge/.aws: they are the same path already
+-------------------------------------------------------------------------------->8
+[2025-05-30T04:40:47.197969998Z][docker-desktop-user-distro] linkPathToWindows windowsPath = /mnt/c/Users/<HOST>Ghatge/.azure, linkPath = <HOME>/.azure
+[2025-05-30T04:40:47.209285671Z][docker-desktop-user-distro] no need to symlink <HOME>/.azure to /mnt/c/Users/<HOST>Ghatge/.azure: they are the same path already
+-------------------------------------------------------------------------------->8
+[2025-05-30T04:40:47.588713075Z][docker-desktop-user-distro] linkPathToWindows windowsPath = /mnt/c/Users/<HOST>Ghatge/.docker/features.json, linkPath = ~/.docker/features.json
+-------------------------------------------------------------------------------->8
+[2025-06-02T04:54:56.466207279Z][docker-desktop-user-distro] syncContextStores <HOME>/.docker/contexts <-> /mnt/c/Users/<HOST>Ghatge/.docker/contexts
+[2025-06-02T04:54:56.482577387Z][docker-desktop-user-distro] syncContextStores <HOME>/.docker/contexts <-> /mnt/c/Users/<HOST>Ghatge/.docker/contexts: syncNoop
+-------------------------------------------------------------------------------->8
+[2025-06-02T04:54:56.901875952Z][docker-desktop-user-distro] linkPathToWindows windowsPath = /mnt/c/Users/<HOST>Ghatge/.aws, linkPath = <HOME>/.aws
+[2025-06-02T04:54:56.912220146Z][docker-desktop-user-distro] no need to symlink <HOME>/.aws to /mnt/c/Users/<HOST>Ghatge/.aws: they are the same path already
+-------------------------------------------------------------------------------->8
+[2025-06-02T04:54:57.395069250Z][docker-desktop-user-distro] linkPathToWindows windowsPath = /mnt/c/Users/<HOST>Ghatge/.azure, linkPath = <HOME>/.azure
+[2025-06-02T04:54:57.407128095Z][docker-desktop-user-distro] no need to symlink <HOME>/.azure to /mnt/c/Users/<HOST>Ghatge/.azure: they are the same path already
+-------------------------------------------------------------------------------->8
+[2025-06-02T04:54:57.815315636Z][docker-desktop-user-distro] linkPathToWindows windowsPath = /mnt/c/Users/<HOST>Ghatge/.docker/features.json, linkPath = ~/.docker/features.json
+-------------------------------------------------------------------------------->8
+[2025-06-03T07:14:44.578915049Z][docker-desktop-user-distro] syncContextStores <HOME>/.docker/contexts <-> /mnt/c/Users/<HOST>Ghatge/.docker/contexts
+[2025-06-03T07:14:44.624893964Z][docker-desktop-user-distro] syncContextStores <HOME>/.docker/contexts <-> /mnt/c/Users/<HOST>Ghatge/.docker/contexts: syncNoop
+-------------------------------------------------------------------------------->8
+[2025-06-03T07:14:44.933412655Z][docker-desktop-user-distro] linkPathToWindows windowsPath = /mnt/c/Users/<HOST>Ghatge/.aws, linkPath = <HOME>/.aws
+[2025-06-03T07:14:44.943455420Z][docker-desktop-user-distro] no need to symlink <HOME>/.aws to /mnt/c/Users/<HOST>Ghatge/.aws: they are the same path already
+-------------------------------------------------------------------------------->8
+[2025-06-03T07:14:45.220490519Z][docker-desktop-user-distro] linkPathToWindows windowsPath = /mnt/c/Users/<HOST>Ghatge/.azure, linkPath = <HOME>/.azure
+[2025-06-03T07:14:45.230070590Z][docker-desktop-user-distro] no need to symlink <HOME>/.azure to /mnt/c/Users/<HOST>Ghatge/.azure: they are the same path already
+-------------------------------------------------------------------------------->8
+[2025-06-03T07:14:45.519181444Z][docker-desktop-user-distro] linkPathToWindows windowsPath = /mnt/c/Users/<HOST>Ghatge/.docker/features.json, linkPath = ~/.docker/features.json
+-------------------------------------------------------------------------------->8
+[2025-06-04T05:44:06.325194822Z][docker-desktop-user-distro] syncContextStores <HOME>/.docker/contexts <-> /mnt/c/Users/<HOST>Ghatge/.docker/contexts
+[2025-06-04T05:44:06.337300236Z][docker-desktop-user-distro] syncContextStores <HOME>/.docker/contexts <-> /mnt/c/Users/<HOST>Ghatge/.docker/contexts: syncNoop
+-------------------------------------------------------------------------------->8
+[2025-06-04T05:44:06.639207701Z][docker-desktop-user-distro] linkPathToWindows windowsPath = /mnt/c/Users/<HOST>Ghatge/.aws, linkPath = <HOME>/.aws
+[2025-06-04T05:44:06.650381185Z][docker-desktop-user-distro] no need to symlink <HOME>/.aws to /mnt/c/Users/<HOST>Ghatge/.aws: they are the same path already
+-------------------------------------------------------------------------------->8
+[2025-06-04T05:44:07.086379229Z][docker-desktop-user-distro] linkPathToWindows windowsPath = /mnt/c/Users/<HOST>Ghatge/.azure, linkPath = <HOME>/.azure
+[2025-06-04T05:44:07.098058136Z][docker-desktop-user-distro] no need to symlink <HOME>/.azure to /mnt/c/Users/<HOST>Ghatge/.azure: they are the same path already
+-------------------------------------------------------------------------------->8
+[2025-06-04T05:44:07.430125263Z][docker-desktop-user-distro] linkPathToWindows windowsPath = /mnt/c/Users/<HOST>Ghatge/.docker/features.json, linkPath = ~/.docker/features.json
+-------------------------------------------------------------------------------->8
+[2025-06-04T05:55:02.706384241Z][docker-desktop-user-distro] syncContextStores <HOME>/.docker/contexts <-> /mnt/c/Users/<HOST>Ghatge/.docker/contexts
+[2025-06-04T05:55:02.721655915Z][docker-desktop-user-distro] syncContextStores <HOME>/.docker/contexts <-> /mnt/c/Users/<HOST>Ghatge/.docker/contexts: syncNoop
+-------------------------------------------------------------------------------->8
+[2025-06-04T05:55:03.088376698Z][docker-desktop-user-distro] linkPathToWindows windowsPath = /mnt/c/Users/<HOST>Ghatge/.aws, linkPath = <HOME>/.aws
+[2025-06-04T05:55:03.101361263Z][docker-desktop-user-distro] no need to symlink <HOME>/.aws to /mnt/c/Users/<HOST>Ghatge/.aws: they are the same path already
+-------------------------------------------------------------------------------->8
+[2025-06-04T05:55:03.438861154Z][docker-desktop-user-distro] linkPathToWindows windowsPath = /mnt/c/Users/<HOST>Ghatge/.azure, linkPath = <HOME>/.azure
+[2025-06-04T05:55:03.448104376Z][docker-desktop-user-distro] no need to symlink <HOME>/.azure to /mnt/c/Users/<HOST>Ghatge/.azure: they are the same path already
+-------------------------------------------------------------------------------->8
+[2025-06-04T05:55:03.743040405Z][docker-desktop-user-distro] linkPathToWindows windowsPath = /mnt/c/Users/<HOST>Ghatge/.docker/features.json, linkPath = ~/.docker/features.json
+-------------------------------------------------------------------------------->8
+[2025-06-04T12:03:30.668137650Z][docker-desktop-user-distro] syncContextStores <HOME>/.docker/contexts <-> /mnt/c/Users/<HOST>Ghatge/.docker/contexts
+[2025-06-04T12:03:30.676213157Z][docker-desktop-user-distro] syncContextStores <HOME>/.docker/contexts <-> /mnt/c/Users/<HOST>Ghatge/.docker/contexts: syncNoop
+-------------------------------------------------------------------------------->8
+[2025-06-04T12:03:31.200237139Z][docker-desktop-user-distro] linkPathToWindows windowsPath = /mnt/c/Users/<HOST>Ghatge/.aws, linkPath = <HOME>/.aws
+[2025-06-04T12:03:31.208182523Z][docker-desktop-user-distro] no need to symlink <HOME>/.aws to /mnt/c/Users/<HOST>Ghatge/.aws: they are the same path already
+-------------------------------------------------------------------------------->8
+[2025-06-04T12:03:32.057717558Z][docker-desktop-user-distro] linkPathToWindows windowsPath = /mnt/c/Users/<HOST>Ghatge/.azure, linkPath = <HOME>/.azure
+[2025-06-04T12:03:32.070618987Z][docker-desktop-user-distro] no need to symlink <HOME>/.azure to /mnt/c/Users/<HOST>Ghatge/.azure: they are the same path already
+-------------------------------------------------------------------------------->8
+[2025-06-04T12:03:32.701879559Z][docker-desktop-user-distro] linkPathToWindows windowsPath = /mnt/c/Users/<HOST>Ghatge/.docker/features.json, linkPath = ~/.docker/features.json
+-------------------------------------------------------------------------------->8
+[2025-06-05T04:35:33.766753680Z][docker-desktop-user-distro] syncContextStores <HOME>/.docker/contexts <-> /mnt/c/Users/<HOST>Ghatge/.docker/contexts
+[2025-06-05T04:35:33.778125816Z][docker-desktop-user-distro] syncContextStores <HOME>/.docker/contexts <-> /mnt/c/Users/<HOST>Ghatge/.docker/contexts: syncNoop
+-------------------------------------------------------------------------------->8
+[2025-06-05T04:35:34.063278600Z][docker-desktop-user-distro] linkPathToWindows windowsPath = /mnt/c/Users/<HOST>Ghatge/.aws, linkPath = <HOME>/.aws
+[2025-06-05T04:35:34.073962200Z][docker-desktop-user-distro] no need to symlink <HOME>/.aws to /mnt/c/Users/<HOST>Ghatge/.aws: they are the same path already
+-------------------------------------------------------------------------------->8
+[2025-06-05T04:35:34.389960331Z][docker-desktop-user-distro] linkPathToWindows windowsPath = /mnt/c/Users/<HOST>Ghatge/.azure, linkPath = <HOME>/.azure
+[2025-06-05T04:35:34.400057192Z][docker-desktop-user-distro] no need to symlink <HOME>/.azure to /mnt/c/Users/<HOST>Ghatge/.azure: they are the same path already
+-------------------------------------------------------------------------------->8
+[2025-06-05T04:35:34.694114733Z][docker-desktop-user-distro] linkPathToWindows windowsPath = /mnt/c/Users/<HOST>Ghatge/.docker/features.json, linkPath = ~/.docker/features.json

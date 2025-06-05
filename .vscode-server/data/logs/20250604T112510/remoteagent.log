@@ -1,0 +1,12 @@
+2025-06-04 11:25:11.018 [info] 
+
+
+
+
+2025-06-04 11:25:11.031 [info] Extension host agent started.
+2025-06-04 11:25:11.099 [info] [127.0.0.1][9ed386c9][ManagementConnection] New connection established.
+2025-06-04 11:25:11.152 [info] Deleted marked for removal extension from disk ms-azuretools.vscode-docker /home/prachighatge/.vscode-server/extensions/ms-azuretools.vscode-docker-1.29.6
+2025-06-04 11:25:11.191 [info] ComputeTargetPlatform: linux-x64
+2025-06-04 11:25:11.198 [info] [127.0.0.1][1676a9ba][ExtensionHostConnection] New connection established.
+2025-06-04 11:25:11.340 [info] [127.0.0.1][1676a9ba][ExtensionHostConnection] <2107> Launched Extension Host Process.
+2025-06-04 11:25:14.588 [info] ComputeTargetPlatform: linux-x64

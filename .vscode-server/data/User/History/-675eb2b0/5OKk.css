@@ -1,0 +1,129 @@
+/* App.css */
+
+/* Font: Add this to public/index.html head:
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #f0f2f5, #d9e4f5);
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Main container */
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #007bff;
+  margin-bottom: 30px;
+}
+
+/* Controls section */
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+/* Inputs and select */
+select,
+input,
+button {
+  padding: 10px 14px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+select:focus,
+input:focus {
+  border-color: #007bff;
+}
+
+/* Buttons */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Results container */
+.results {
+  margin-top: 30px;
+}
+
+/* List style reset */
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Generic result cards */
+.card {
+  background-color: #f9f9f9;
+  margin-bottom: 12px;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+/* Avatar image */
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 12px;
+  vertical-align: middle;
+}
+
+/* Weather result style */
+.weather-card {
+  text-align: center;
+  padding: 24px;
+  background-color: #e3f2fd;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* No results message */
+.no-results {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+  margin-top: 20px;
+}

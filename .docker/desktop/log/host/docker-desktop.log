@@ -4,3 +4,30 @@
 -------------------------------------------------------------------------------->8
 [2025-05-23T04:56:34.209683258Z][docker-desktop.ipc] 09ae6ff9-docker-desktop-cli -> <HOME>/.docker/desktop/backend.sock BackendAPI
 [2025-05-23T04:56:34.210151180Z][docker-desktop.ipc] f6ed47c2-docker-desktop-cli -> <HOME>/.docker/desktop/docker-api-proxy-control.sock proxyControl
+-------------------------------------------------------------------------------->8
+[2025-05-28T04:45:04.417705041Z][docker-desktop.ipc] a55ba92c-docker-desktop-cli -> <HOME>/.docker/desktop/backend.sock BackendAPI
+[2025-05-28T04:45:04.418092271Z][docker-desktop.ipc] 3d1dc683-docker-desktop-cli -> <HOME>/.docker/desktop/docker-api-proxy-control.sock proxyControl
+-------------------------------------------------------------------------------->8
+[2025-05-29T04:39:02.510307342Z][docker-desktop.ipc] 7fba42f2-docker-desktop-cli -> <HOME>/.docker/desktop/backend.sock BackendAPI
+[2025-05-29T04:39:02.510806038Z][docker-desktop.ipc] dac1397f-docker-desktop-cli -> <HOME>/.docker/desktop/docker-api-proxy-control.sock proxyControl
+-------------------------------------------------------------------------------->8
+[2025-05-30T04:40:48.937310566Z][docker-desktop.ipc] 27baf119-docker-desktop-cli -> <HOME>/.docker/desktop/backend.sock BackendAPI
+[2025-05-30T04:40:48.937762569Z][docker-desktop.ipc] 8c8c465d-docker-desktop-cli -> <HOME>/.docker/desktop/docker-api-proxy-control.sock proxyControl
+-------------------------------------------------------------------------------->8
+[2025-06-02T04:54:59.255261209Z][docker-desktop.ipc] 413e77e4-docker-desktop-cli -> <HOME>/.docker/desktop/backend.sock BackendAPI
+[2025-06-02T04:54:59.255884529Z][docker-desktop.ipc] bffb1bc6-docker-desktop-cli -> <HOME>/.docker/desktop/docker-api-proxy-control.sock proxyControl
+-------------------------------------------------------------------------------->8
+[2025-06-03T07:14:46.759421039Z][docker-desktop.ipc] f12f1d82-docker-desktop-cli -> <HOME>/.docker/desktop/backend.sock BackendAPI
+[2025-06-03T07:14:46.759906514Z][docker-desktop.ipc] 9672b116-docker-desktop-cli -> <HOME>/.docker/desktop/docker-api-proxy-control.sock proxyControl
+-------------------------------------------------------------------------------->8
+[2025-06-04T05:44:08.805861593Z][docker-desktop.ipc] 62f17d84-docker-desktop-cli -> <HOME>/.docker/desktop/backend.sock BackendAPI
+[2025-06-04T05:44:08.806917045Z][docker-desktop.ipc] c95310f8-docker-desktop-cli -> <HOME>/.docker/desktop/docker-api-proxy-control.sock proxyControl
+-------------------------------------------------------------------------------->8
+[2025-06-04T05:55:04.942544677Z][docker-desktop.ipc] 216950bb-docker-desktop-cli -> <HOME>/.docker/desktop/backend.sock BackendAPI
+[2025-06-04T05:55:04.943033993Z][docker-desktop.ipc] e5077dca-docker-desktop-cli -> <HOME>/.docker/desktop/docker-api-proxy-control.sock proxyControl
+-------------------------------------------------------------------------------->8
+[2025-06-04T12:03:35.913913366Z][docker-desktop.ipc] d50a118a-docker-desktop-cli -> <HOME>/.docker/desktop/backend.sock BackendAPI
+[2025-06-04T12:03:35.914469761Z][docker-desktop.ipc] df24da0d-docker-desktop-cli -> <HOME>/.docker/desktop/docker-api-proxy-control.sock proxyControl
+-------------------------------------------------------------------------------->8
+[2025-06-05T04:35:36.186146697Z][docker-desktop.ipc] 3a34043c-docker-desktop-cli -> <HOME>/.docker/desktop/backend.sock BackendAPI
+[2025-06-05T04:35:36.187133244Z][docker-desktop.ipc] 82b2148b-docker-desktop-cli -> <HOME>/.docker/desktop/docker-api-proxy-control.sock proxyControl

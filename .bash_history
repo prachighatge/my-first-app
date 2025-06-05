@@ -139,3 +139,120 @@ git push
 npm error Missing script: "build"
 rm -rf node_modules
 npm install
+git add package.json
+git commit -m "Add node version engine for Vercel"
+git push
+git add package.json
+git commit -m "Add Node engine version for Vercel"
+git push
+git remote add origin https://github.com/your-username/your-repo-name.git
+git branch -M main
+git push -u origin main
+git status
+git add public/index.html
+git commit -m "Ensure index.html is included"
+git push
+ls public/index.html
+git add public/index.html
+git commit -m "Add index.html"
+git push
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/yourusername/yourrepo.git
+git branch -M main
+git push -u origin main
+npm run build
+npm run
+npm run build
+rm -rf docs/*
+cp -r build/* docs/
+ls -l
+cat package.json
+npm run build
+cd my-first-app
+npm run build
+ls -l /home/prachighatge/my-first-app/package.json
+head -50 /home/prachighatge/my-first-app/package.json
+cat -A /home/prachighatge/my-first-app/package.json
+npm install
+npm run build
+npm install
+npm run build
+pwd
+ls -l
+cat package.json
+npm run
+cd my-first-app
+npm run build
+cd my-first-app
+npm run build
+npm install -g gh-pages
+gh-pages -d build
+sudo npm install -g gh-pages
+gh-pages -d build
+sudo npm install -g gh-pages
+gh-pages -d build
+cd ~/my-first-app
+gh-pages -d build
+cd ~/my-first-app
+gh-pages -d build
+gh-pages -d build --git git
+cd ~/my-first-app/build
+git init
+git remote add origin https://github.com/prachighatge/my-first-app.git
+git checkout -b gh-pages
+git add .
+git commit -m "Deploy React build manually to gh-pages"
+git push -f origin gh-pages
+cd ~/my-first-app/build        # go to your build folder
+git init                       # initialize a new repo
+git remote add origin https://github.com/prachighatge/my-first-app.git
+git checkout -b gh-pages       # create gh-pages branch
+git add .                      # add all build files
+git commit -m "Deploy build to gh-pages"
+git push -f origin gh-pages    # force push to update the branch
+npm run build
+# Go into the build folder
+cd build
+# Initialize a new Git repo (only inside build)
+git init
+# Connect to your remote GitHub repo
+git remote add origin https://github.com/prachighatge/my-first-app.git
+# Create and switch to gh-pages branch
+git checkout -b gh-pages
+# Add and commit all build files
+git add .
+git commit -m "Deploy production build"
+# Push to gh-pages branch (overwrite it)
+git push -f origin gh-pages
+git add .
+git commit -m "Added background image to app UI"
+cd ..
+~/my-first-app/
+git add .
+git commit -m "Added background image to app UI"
+git push origin main
+npm run build
+npm run deploy
+npm run build
+npm run deploy
+cd ~/my-first-app
+npm run build
+npm run deploy
+npm run build
+cd ~/my-first-app
+npm run build  
+npm start
+cd ~/my-first-app
+git add .
+git commit -m "Updated UI design with background image and styles"
+git add .
+git commit -m "Update UI with background and new styles"
+git push gh.pages main
+git add .
+git commit -m "UI updated with background image and colors"
+git remote -v
+git push origin main
+npm run deploy
+npm run build

@@ -1,0 +1,23 @@
+2025-05-27 09:41:30.983 [info] read schema from vscode: vscode://schemas/vscode-extensions
+2025-05-27 09:41:30.987 [info] cancelled
+2025-05-27 09:41:31.094 [info] read schema from vscode: vscode://schemas/toolsParameters
+2025-05-27 09:41:31.095 [info] read schema from vscode: vscode://schemas/settings/configurationDefaults
+2025-05-27 09:41:31.277 [info] read schema from vscode: vscode://schemas/settings/resourceLanguage
+2025-05-27 09:41:31.279 [info] read schema from vscode: vscode://schemas/mcp
+2025-05-27 09:41:31.284 [info] read schema from vscode: vscode://schemas/token-styling
+2025-05-27 09:41:31.289 [info] read schema from vscode: vscode://schemas/textmate-colors
+2025-05-27 09:41:31.292 [info] read schema from vscode: vscode://schemas/workbench-colors
+2025-05-27 09:41:31.590 [info] cancelled
+2025-05-27 09:41:31.592 [info] read schema from vscode: vscode://schemas/vscode-extensions
+2025-05-27 09:41:31.624 [info] read schema from vscode: vscode://schemas/toolsParameters
+2025-05-27 09:41:31.625 [info] read schema from vscode: vscode://schemas/settings/configurationDefaults
+2025-05-27 09:41:32.042 [info] schema change detected vscode://schemas/settings/resourceLanguage
+2025-05-27 09:41:32.057 [info] read schema from vscode: vscode://schemas/vscode-extensions
+2025-05-27 09:41:32.121 [info] schema change detected vscode://schemas/settings/configurationDefaults
+2025-05-27 09:41:32.121 [info] schema change detected vscode://schemas/vscode-extensions
+2025-05-27 09:41:32.129 [info] read schema from vscode: vscode://schemas/settings/configurationDefaults
+2025-05-27 09:41:32.203 [info] schema change detected vscode://schemas/settings/configurationDefaults
+2025-05-27 09:41:32.221 [info] read schema from vscode: vscode://schemas/settings/resourceLanguage
+2025-05-27 09:41:32.290 [info] cancelled
+2025-05-27 09:41:32.291 [info] read schema from vscode: vscode://schemas/vscode-extensions
+2025-05-27 09:41:32.318 [info] read schema from vscode: vscode://schemas/settings/configurationDefaults

@@ -1,0 +1,126 @@
+/* styles.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.app-container {
+  background-image: url('/my-first-app/background.jpg'); /* ← Only works after deploy if app is served from /my-first-app */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding: 20px;
+  color: white;
+}
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #007acc;
+}
+
+.search-controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+select,
+input[type="text"] {
+  padding: 10px 15px;
+  border: 1.5px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  min-width: 150px;
+}
+
+select:focus,
+input[type="text"]:focus {
+  outline: none;
+  border-color: #007acc;
+  box-shadow: 0 0 5px rgba(0, 122, 204, 0.5);
+}
+
+button {
+  background-color: #007acc;
+  color: white;
+  border: none;
+  padding: 11px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  min-width: 90px;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+.result-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.result-item {
+  background: #e9f1fb;
+  padding: 15px 20px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.result-item:hover {
+  background: #d0e4fb;
+}
+
+.result-item img {
+  border-radius: 50%;
+  border: 2px solid #007acc;
+  flex-shrink: 0;
+}
+
+.weather-result {
+  background: #e0f7fa;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #00796b;
+  box-shadow: 0 0 10px rgba(0, 121, 107, 0.3);
+}
+
+a {
+  color: #007acc;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .search-controls {
+    flex-direction: column;
+    gap: 15px;
+  }
+  select, input[type="text"], button {
+    width: 100%;
+    min-width: unset;
+  }
+}
